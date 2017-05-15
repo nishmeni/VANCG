@@ -1,0 +1,105 @@
+
+.movie-entry {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    background-color: lightgrey;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.movie-entry .btn {
+    margin: 2px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  background-color: black;
+  margin: 0px;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav.navbar-nav li a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+footer {
+    padding-top: 25px;
+      height: 31em;
+    background-color: #c6d7f2;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+  border: 1px solid #ccc;
+}
+
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 20px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 2px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
