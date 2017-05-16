@@ -31,6 +31,14 @@ app.get("/about", function(request, response) {
     });
 });
 
+app.get("/contact", function(request, response) {
+    movieData.getAllMovies().then(function(movieEntries) {
+        response.render("pages/contact", {movieEntries: movieEntries});
+    }, function(errorMessage) {
+        response.json({error: errorMessage})
+    });
+});
+
 // Get a single movie
 app.get("/api/movies/:id", function(request, response) {
     movieData.getMovie(request.params.id).then(function(movie) {

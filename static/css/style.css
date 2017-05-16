@@ -285,3 +285,7 @@ h1 {
 body.modal-open {
     overflow: visible;
 }
+
+#contact-main {
+  margin-bottom: 15em;
+}
