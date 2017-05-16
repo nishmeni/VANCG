@@ -108,13 +108,13 @@
 
   <div class="featurette">
     <img class="featurette-image pull-right" src="/assets/images/neo.jpg" width = "500px" height = "500px">
-    <h2 class="featurette-heading"> NEOPOLITAN CAPITAL GROUP, LLC </h2>
+    <h2 class="featurette-heading"> Neopolitan Capital Group, LLC </h2>
     <p class="lead">Neopolitan Capital Group, LLC is  an independent registered investment advisory company licensed in NJ.  As such, we offer only fee based financial planning, pension and investment advisory services.  We have been in the business since '85, service over 700 clients and would like the opportunity to assist you, your clients and offer you the same opportunity to work with our clients.</p>
     <ul class = "neo">
-        <li><a href="#">Investment Philosophy</a></li>
-        <li class="active"><a href="#">Investment Strategy</a></li>
-        <li><a href="#">Fee Based Investing</a></li>
-        <li><a href="#">Tailored Investing</a></li>
+        <li> <a data-info = "IP" class = "info">Investment Philosophy</a></li>
+        <li> <a data-info = "IS" class = "info">Investment Strategy</a></li>
+        <li> <a data-info = "FI" class = "info">Fee Based Investing</a></li>
+        <li> <a data-info = "TI" class = "info">Tailored Investing</a></li>
     </ul>
   </div>
 
@@ -125,10 +125,10 @@
     <h2 class="featurette-heading">Visconti & Associates, LLC</h2>
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     <ul class = "neo">
-        <li><a href="#">Estate Planning</a></li>
-        <li class="active"><a href="#">Tax Planning</a></li>
-        <li><a href="#">Retirement Planning</a></li>
-        <li><a href="#">Education Planning</a></li>
+        <li> <a data-info = "EP" class = "info">Estate Planning</a></li>
+        <li> <a data-info = "TP" class = "info">Tax Planning</a></li>
+        <li> <a data-info = "RP" class = "info">Retirement Planning</a></li>
+        <li> <a data-info = "EdP" class = "info">Education Planning</a></li>
     </ul>
   </div>
 
@@ -136,7 +136,27 @@
 
 </div>
   <!-- /END THE FEATURETTES -->
+  <!-- Button trigger modal -->
 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="infoModalLabel"></h4>
+        </div>
+        <div class="modal-body" id="infoModalBody">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

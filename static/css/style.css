@@ -266,7 +266,7 @@ h1 {
 
 .neo > li a {
   text-decoration: none;
-  color: #ccc;
+  color: #666;
   font: 20px/1 Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
 
@@ -278,10 +278,10 @@ h1 {
 }
 
 .neo > li a:hover {
-  color: #666;
+  color: #333;
+  font-weight: bold;
 }
 
-.neo > li.active a {
-  font-weight: bold;
-  color: #333;
+body.modal-open {
+    overflow: visible;
 }
