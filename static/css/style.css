@@ -97,7 +97,191 @@ footer {
     border-radius: 100px;
 }
 
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
 .featurette-divider {
-  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
   border: 1px solid #ccc;
+}
+.featurette {
+  padding-top: 10px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -80px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+  .carousel .item {
+    height: 500px;
+  }
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
+
+  .featurette {
+    height: auto;
+    padding: 0;
+  }
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
+
+  }
+  .carousel .item {
+    height: 400px;
+  }
+  .carousel img {
+    height: 400px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 70px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+  .marketing .span4 + .span4 {
+    margin-top: 30px;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.carousel-caption > ul {
+  list-style-type: square;
+
+}
+
+#intro {
+  font-size: 20px;
+
+}
+
+#welcome {
+  font-size: 20px;
+  color: black;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#license {
+  width: 35%;
+  height: 75%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h1 {
+  color: black;
+  font-family: "Great Vibes", cursive;
+  font-size: 165px;
+  line-height: 160px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.neo {
+  overflow: auto;
+  list-style-type: none;
+}
+
+.neo > li {
+  height: 25px;
+  margin-right: 0px;
+  padding: 0 10px;
+}
+
+.neo > li:last-child {
+  border-right: none;
+}
+
+.neo > li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 20px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.neo > li a:hover {
+  color: #666;
+}
+
+.neo > li.active a {
+  font-weight: bold;
+  color: #333;
 }

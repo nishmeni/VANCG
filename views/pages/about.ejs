@@ -3,49 +3,12 @@
 
 <head>
     <% include ../partials/head %>
-    <link rel="stylesheet" href="/assets/css/about.css">
+
 </head>
 
 <body>
 
     <% include ../partials/nav %>
-  <!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/assets/images/slide-01.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/assets/images/slide-02.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <a class="btn btn-large btn-primary" href="#">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="/assets/images/slide-03.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div><!-- /.carousel -->
 
 
 
@@ -53,27 +16,88 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="/assets/images/slide2.jpg" alt="Slide1" style="width:100%;height:100%">
+        <div class="carousel-caption" id = "intro">
+              <img src="/assets/images/greg.png" style="text-align:center;">
+              <h3>Gregory M. Visconti CFP</h3>
+              <p>Immediately following his graduation from Rider College ('85) with a finance degree, he started his financial planning practice and became a series 7 NASD and a Certified Financial Planner, registered representative In 2001, he became a NJ Investment Advisor, which he was exempt from the examination due to the extensive educational and work experience that he possessed.​ </p>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/assets/images/slide2.jpg" alt="Chicago" style="width:100%;height:100%">
+        <div class="carousel-caption" id = "license">
+          <h3>Professional Liscenses</h3>
+          <p>Gregory Visconti has acquired and maintains various professional degrees and licenses. As such, he must satisfy the continuing educational course work required to maintain the licensing and compliance standards as a: </p>
+          <ul>
+              <li> Certified Financial Planner (CFP™) - Board ID #27311 </li>
+              <li> NJ Real Estate Sales Agent - License #8442745 </li>
+              <li> NJ/NY Life & Health Insurance Producer - License #IP8218459 </li>
+              <li> NJ Registered Investment Adviser - FINRA I.A.R.D. #129478 </li>
+              <li> Affordable Care Act Broker - NPN #612051 </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/assets/images/slide1.jpg" alt="New York" style="width:100%;height:100%">
+        <div class="carousel-caption" id = "welcome">
+          <h1> Welcome </h1>
+          <p> It is often said, the only mistake in life is the one you do not learn from, and my own mistake was how I chose a career as a Certified Financial Planner.  It has been my  only job in my entire adult life and god willing, I will never retire from it! </p>
+          <p> We consider our clients, extended family, each deserving only our  best, most honest and objective efforts.  We respect all of my clients for the success each has achieved. We treasure the trust that is placed in us as a gift of their confidence.  It is a privilege to be trusted and why we love what we do.  We are truthful, fair and goow willed business people </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
 <div class="container marketing">
 
+  <hr class="featurette-divider">
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 span4">
-      <img class="img-circle" data-src="holder.js/140x140">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
+      <img class="img-circle" src="/assets/images/exp.png" width="150px" height="150px">
+      <h2>Experience</h2>
+      <p> Since 1985, we have been assisting individuals and small businesses in planning for their financial needs. We currently conduct business with over 800 clients, from whom we gain invaluable insight, experience and knowledge.​​</p>
+
     </div><!-- /.span4 -->
     <div class="col-md-4 span4">
-      <img class="img-circle" data-src="holder.js/140x140">
-      <h2>Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
+      <img class="img-circle" src="/assets/images/mission.png" width="150px" height="150px">
+      <h2>Mission Statement</h2>
+      <p>It is our goal to provide every client with suitable and objective advice, on which to rely to make proper financial decisions. We consider ourselves to be client advocates and never compromise our integrity or reputation. We simply desire to be people you can count on and people you can trust.​​</p>
     </div><!-- /.span4 -->
     <div class="col-md-4 span4">
-      <img class="img-circle" data-src="holder.js/140x140">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
+      <img class="img-circle" src="/assets/images/finance.png" width="150px" height="150px">
+      <h2>Financial Planning</h2>
+      <p>​Think about how much you earn, now think about how much you spend. Why not let us help you find the funds you need to fulfill this financial obligation. After all, you owe it only to yourself!​</p>
+
     </div><!-- /.span4 -->
   </div><!-- /.row -->
 
@@ -83,29 +107,34 @@
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image pull-right" src="/assets/images/browser-icon-chrome.png">
-    <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <img class="featurette-image pull-right" src="/assets/images/neo.jpg" width = "500px" height = "500px">
+    <h2 class="featurette-heading"> NEOPOLITAN CAPITAL GROUP, LLC </h2>
+    <p class="lead">Neopolitan Capital Group, LLC is  an independent registered investment advisory company licensed in NJ.  As such, we offer only fee based financial planning, pension and investment advisory services.  We have been in the business since '85, service over 700 clients and would like the opportunity to assist you, your clients and offer you the same opportunity to work with our clients.</p>
+    <ul class = "neo">
+        <li><a href="#">Investment Philosophy</a></li>
+        <li class="active"><a href="#">Investment Strategy</a></li>
+        <li><a href="#">Fee Based Investing</a></li>
+        <li><a href="#">Tailored Investing</a></li>
+    </ul>
   </div>
 
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image pull-left" src="/assets/images/browser-icon-firefox.png">
-    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+    <img class="featurette-image pull-left" src="/assets/images/visconti.jpg" width = "500px" height = "500px">
+    <h2 class="featurette-heading">Visconti & Associates, LLC</h2>
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <ul class = "neo">
+        <li><a href="#">Estate Planning</a></li>
+        <li class="active"><a href="#">Tax Planning</a></li>
+        <li><a href="#">Retirement Planning</a></li>
+        <li><a href="#">Education Planning</a></li>
+    </ul>
   </div>
 
   <hr class="featurette-divider">
 
-  <div class="featurette">
-    <img class="featurette-image pull-right" src="/assets/images/browser-icon-safari.png">
-    <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-  </div>
-
-  <hr class="featurette-divider">
-
+</div>
   <!-- /END THE FEATURETTES -->
 
 
