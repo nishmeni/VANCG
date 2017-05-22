@@ -125,15 +125,7 @@ footer {
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
 .featurette-image {
-  margin-top: -80px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-  margin-right: 40px;
-}
-.featurette-image.pull-right {
-  margin-left: 40px;
+  /* margin-top: -80px;  Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Thin out the marketing headings */
@@ -163,17 +155,13 @@ footer {
     height: auto;
     padding: 0;
   }
-  .featurette-image.pull-left,
-  .featurette-image.pull-right {
-    display: block;
-    float: none;
-    max-width: 40%;
-    margin: 0 auto 20px;
-  }
+
 }
 
 
 @media (max-width: 767px) {
+
+
 
   .carousel {
     margin-left: -20px;
@@ -230,11 +218,16 @@ footer {
   font-family: 'Droid Sans', sans-serif;
 }
 
+
 #license {
   width: 35%;
   height: 75%;
   font-size: 20px;
   text-align: justify;
+}
+
+#myCarousel {
+    margin-top: 2em;
 }
 
 h1 {
@@ -286,6 +279,219 @@ body.modal-open {
     overflow: visible;
 }
 
-#contact-main {
-  margin-bottom: 15em;
+/* ======= Contact ======= */
+.contact-main {
+  padding-top: 80px;
+}
+.contact-main .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.contact-main .intro {
+  margin-bottom: 30px;
+  color: #999;
+}
+.contact-main .item {
+  margin-bottom: 60px;
+}
+.contact-main .item .item-inner {
+  margin: 30px;
+  padding: 30px 10px;
+  background: #d1d1d1;
+  min-height: 300px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.contact-main .item .icon {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #6dbd63;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: table;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform ease-out 0.2s, background 0.3s;
+  -moz-transition: -moz-transform ease-out 0.2s, background 0.3s;
+  transition: transform ease-out 0.2s, background 0.3s;
+  margin-bottom: 30px;
+}
+.contact-main .item .icon:hover {
+  background: #6dbd63;
+  color: #fff;
+}
+.contact-main .item .icon:hover .fa,
+.contact-main .item .icon:hover .pe-icon {
+  color: #fff;
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  -o-transform: scale(0.93);
+}
+.contact-main .item .icon .fa,
+.contact-main .item .icon .pe-icon {
+  color: #6dbd63;
+  font-size: 48px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.contact-main .item .details {
+  font-size: 18px;
+}
+.contact-main .item .details .day {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Blog archive page */
+.blog-archive .blog-list .post .content {
+  padding-left: 80px;
+}
+.blog-archive .post {
+  position: relative;
+}
+.blog-archive .post .date-label {
+  background: #f5f5f5;
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: #fff;
+}
+.blog-archive .post .date-label .month {
+  background: #253340;
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 2px 0;
+}
+.blog-archive .post .date-label .date-number {
+  clear: left;
+  display: block;
+  padding-top: 5px;
+  font-size: 18px;
+  font-family: 'open sans', arial, sans-serif;
+  font-weight: 500;
+  color: #253340;
+}
+
+.blog-category {
+  margin-top: 90px;
+}
+.blog-category .page-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 36px;
+  padding-top: 80px;
+}
+.blog-category .page-title .fa {
+  color: #384d60;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.blog-category .blog-list .post .content .post-title {
+  font-size: 24px;
+}
+.blog-category .blog-list .post .content .meta ul {
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.blog-category .blog-category-list .post {
+  margin-bottom: 60px;
+}
+
+.blog-list .post .post-inner {
+  padding: 0px;
+  position: relative;
+  border: 1px solid #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
+}
+.blog-list .post .post-thumb {
+  background: #253340;
+  overflow: hidden;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.blog-list .post .content {
+  padding: 30px;
+  padding-bottom: 15px;
+  color: #666;
+}
+.blog-list .post .content .post-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+.blog-list .post .content .post-title a {
+  color: #253340;
+}
+.blog-list .post .content .post-entry {
+  margin-bottom: 15px;
+}
+.blog-list .post .content .meta {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 0;
+}
+.blog-list .post .content .meta ul {
+  margin-left: 0;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.blog-list .post .content .meta li:first-child {
+  padding-left: 0;
+}
+.blog-list .post .content .meta li .fa {
+  margin-right: 5px;
+}
+.blog-list .post .content .meta li a {
+  color: #999;
+}
+.blog-list .post .content .meta li a:hover {
+  color: #ec6952;
 }

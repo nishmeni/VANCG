@@ -79,6 +79,9 @@
 
     });
 
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
     $('#myCarousel').carousel();
     // Remove button click handler
     $(document).on('click', '.remove', function(e) {
